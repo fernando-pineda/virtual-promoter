@@ -14,26 +14,38 @@ const Dashboard: React.FC = () => {
   const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
-    <Box h="100%">
-      <SimpleGrid columns={2} spacing={10} p="35">
+    <Box h="100%" display="flex">
+      <SimpleGrid columns={2} spacing={5} margin="auto">
         <VideoCard onClick={onOpen}>
-          <VideoCard.Title>Hola, mundo</VideoCard.Title>
-          <VideoCard.Description>Este es un video perrón</VideoCard.Description>
+          <VideoCard.Image imageRef="https://i.pinimg.com/originals/dd/a1/2c/dda12c587120e5e4378a01f31e812672.jpg" />
+          <VideoCard.Title>VIDEO #1</VideoCard.Title>
+          <VideoCard.Description>
+            Este es un video de prueba para el proyecto del profesor Anibal
+          </VideoCard.Description>
         </VideoCard>
 
         <VideoCard>
-          <VideoCard.Title>Hola, mundo</VideoCard.Title>
-          <VideoCard.Description>Este es un video perrón</VideoCard.Description>
+          <VideoCard.Image imageRef="https://i.pinimg.com/originals/dd/a1/2c/dda12c587120e5e4378a01f31e812672.jpg" />
+          <VideoCard.Title>VIDEO #2</VideoCard.Title>
+          <VideoCard.Description>
+            Este es un video de prueba para el proyecto del profesor Anibal
+          </VideoCard.Description>
         </VideoCard>
 
         <VideoCard>
-          <VideoCard.Title>Hola, mundo</VideoCard.Title>
-          <VideoCard.Description>Este es un video perrón</VideoCard.Description>
+          <VideoCard.Image imageRef="https://i.pinimg.com/originals/dd/a1/2c/dda12c587120e5e4378a01f31e812672.jpg" />
+          <VideoCard.Title>VIDEO #3</VideoCard.Title>
+          <VideoCard.Description>
+            Este es un video de prueba para el proyecto del profesor Anibal
+          </VideoCard.Description>
         </VideoCard>
 
         <VideoCard>
-          <VideoCard.Title>Hola, mundo</VideoCard.Title>
-          <VideoCard.Description>Este es un video perrón</VideoCard.Description>
+          <VideoCard.Image imageRef="https://i.pinimg.com/originals/dd/a1/2c/dda12c587120e5e4378a01f31e812672.jpg" />
+          <VideoCard.Title>VIDEO #4</VideoCard.Title>
+          <VideoCard.Description>
+            Este es un video de prueba para el proyecto del profesor Anibal
+          </VideoCard.Description>
         </VideoCard>
       </SimpleGrid>
 
