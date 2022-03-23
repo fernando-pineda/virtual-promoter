@@ -30,7 +30,7 @@ const Image: React.FC<VideoImageProps> = ({ imageRef, ...restProps }) => {
 
 const Title: React.FC = ({ children }) => {
   return (
-    <chakra.p fontSize="2xl" fontWeight="medium">
+    <chakra.p fontSize="2xl" fontWeight="medium" color="rgb(53, 198, 139)">
       {children}
     </chakra.p>
   );
@@ -50,11 +50,13 @@ const VideoCard: React.FC<VideoCardProps> & VideoCardSubComponents = ({
       as="button"
       onClick={onClick}
       borderColor="#D7D7D7"
+      backgroundColor="white"
       borderRadius="md"
       borderWidth="1px"
       _hover={{ transform: "scale(1.1)", transition: "all 0.2s ease-out" }}
       p="0"
       m="0"
+      shadow="2xl"
     >
       {children}
     </Box>
